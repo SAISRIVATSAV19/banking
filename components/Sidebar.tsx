@@ -45,13 +45,13 @@ const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`
                </p>
             </Link>
         )
-    })}
+     })}
 
     USER
   </nav>
 
   FOOTER
-    </section>
+  </section>
   )
 }
 
