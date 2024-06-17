@@ -5,6 +5,7 @@ import { sidebarLinks } from '@/public/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Footer from './Footer'
 
 
 const Sidebar = ({user}: SiderbarProps) => {
@@ -50,7 +51,7 @@ const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`
     USER
   </nav>
 
-  FOOTER
+  <Footer user = {user}/>
   </section>
   )
 }

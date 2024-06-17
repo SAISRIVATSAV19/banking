@@ -1,7 +1,7 @@
 import React from 'react'
 import { FormControl, FormField, FormLabel, FormMessage } from './ui/form'
 import { Input } from './ui/input'
- 
+import { Control, FieldPath, Form } from 'react-hook-form
 import { Control, Form } from 'react-hook-form'
 import { z } from 'zod'
 import { authformSchema } from '@/lib/utils'
