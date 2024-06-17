@@ -1,4 +1,5 @@
 'use server';
+
 import { ID } from "node-appwrite";
 import { createAdminClient, createSessionClient } from "./appwrite";
 import { cookies } from "next/headers";
@@ -8,7 +9,7 @@ export const signIn = async ({ email , password }:signInProps) => {
     try {
       const { account } = await createAdminClient();//Mutation /Databases / Make fetch  
     
-    const response = await account.createEmailPasswordSession(email,password)
+    const response = await account.createEmailPasswordSession(email,password);
 
     return parseStringify(response);
   } catch (error) {
