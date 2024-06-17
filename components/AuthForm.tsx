@@ -15,11 +15,7 @@ import CustomInput from './Custominput';
 import { authformSchema } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { getLoggedInUser, signUp, signIn } from '@/lib/actions/user.actions'; // Correct import statement
-
-const formSchema = z.object({
-  email: z.string().email(),
-})
+import { getLoggedInUser, signUp, signIn } from '@/lib/actions/user.actions'; // Correct import statement/*const formSchema = z.object({email: z.string().email(),})*/
 
 const AuthForm = ({ type }: { type: string }) => {
   const router = useRouter();
