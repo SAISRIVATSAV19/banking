@@ -11,6 +11,7 @@ const BankCard = ({ account, userName, showBalance=true}:CreditCardProps) => {
         <div>
           <h1 className='text-16 font-semibold text-white'>
             {userName}
+            {account.name || 'Akhil'}
           </h1>
           <p className='font-ibm-plex-serif font-black text-white'>
             {formatAmount(account.currentBalance)}
@@ -20,7 +21,7 @@ const BankCard = ({ account, userName, showBalance=true}:CreditCardProps) => {
         <article className='flex flex-col gap-2'>
           <div className='flex justify-between'>
             <h1 className='text-12 font-semibold text-white'>
-              {userName}
+              {'Akhil'}
             </h1>
             <h2 className='text-12 font-semibold text-white'>
               ●●/ ●●
