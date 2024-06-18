@@ -1,7 +1,9 @@
-import { Link } from 'lucide-react'
-import Image from 'next/image'
+
+
 import React from 'react'
 import BankCard from './BankCard'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const RightSidebar =({user, transactions, banks}:RightSidebarProps) => {
     return(
